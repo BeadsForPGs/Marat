@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 50%;
+        padding: 10px;
+        height: 150px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="main.html">Main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">About team</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<head>
+    <meta charset="UTF-8">
+    <title>Football</title>
+</head>
+<body>
+<div class="row text-center">
+    <div class="column">
+        <label style="display: block">Input players of team 1 (no more than 11, use spaces)</label>
+        <input id="team1" type="text">
+    </div>
+    <div class="column">
+        <label style="display: block">Input players of team 2 (no more than 11, use spaces)</label>
+        <input id="team2" type="text">
+    </div>
+</div>
+<div class="row text-center">
+    <div class="column">
+        <label style="display: block">Input number of goals that first team scored (no more than 7 goals in total)</label>
+        <input id="goal1" type="number">
+    </div>
+    <div class="column">
+        <label style="display: block">Input number of goals that second team scored (no more than 7 goals in total)</label>
+        <input id="goal2" type="number">
+    </div>
+</div>
+<div class="row text-center">
+    <div class="column">
+        <label id="result1" style="display: block">No goals scored yet</label>
+    </div>
+    <div class="column">
+        <label id="result2" style="display: block">No goals scored yet</label>
+    </div>
+</div>
+<div class="text-center" style="margin-bottom: 30px">
+    <label id="winner" style="display: block"> No winner yet</label>
+    <button id="btn">Play</button>
+</div>
+</body>
+<footer class="bg-light text-center text-lg-start">
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Everything was done by Marat <br>
+        This is footer with all my contacts
+    </div>
+</footer>
+<script src="action.js"></script>
+</html>
